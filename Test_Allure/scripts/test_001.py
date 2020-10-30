@@ -36,3 +36,10 @@ class Test_Abc:
 #     def test_abc_002(self):
 #         allure.attach("这是一个描述", "试一下")
 #         assert 0
+
+    @allure.issue("http://www.163.com/ll ")
+    @pytest.allure.testcase('http://www.baidu.com/test_001')
+    @pytest.allure.severity(pytest.allure.severity_level.TRIVIAL)
+    def test_abc_002(self):
+        allure.attach("这是一个描述", "试一下")
+        assert 0
